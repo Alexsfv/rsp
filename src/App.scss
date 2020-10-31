@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 50px 15px;
+    margin: 0 auto;
+    font-family: 'Baloo Tammudu 2', sans-serif;
+}
+
+@media all and(max-width: 480px) {
+    .container {   
+        padding: 30px 15px;
+    }
+}

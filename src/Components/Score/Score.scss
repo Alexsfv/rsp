@@ -1,0 +1,46 @@
+.score {
+    text-align: center;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin: 0 40px;
+        line-height: 1.5;
+    }
+
+    &__points {
+        align-self: flex-end;
+        color: antiquewhite;
+    }
+
+    &__you, &__pc {
+        p {
+            margin: 0;
+            color: antiquewhite;
+        }
+    }
+
+    &__you &__you-count {
+        font-size: 2.2rem;
+        color: greenyellow;
+    }
+
+    &__pc &__pc-count {
+        font-size: 2.2rem;
+        color: rgb(255, 61, 61);
+    }
+}
+
+@media all and(max-width: 480px) {
+    .score {   
+        padding: 0 15px;
+
+        p {
+            margin: 0 10px;
+            line-height: 1.1;
+        }
+    }
+}

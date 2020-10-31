@@ -1,0 +1,61 @@
+.item {
+
+    &__icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.74);
+        margin: 0 auto 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        transition: all 0.5s ease;
+    }
+
+    img {
+        max-width: 75%;
+        max-height: 75%;
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        margin: 17px 0 0 0;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .item__icon {
+            transform: scale(1.3) rotate(-30deg);
+        }
+    }
+}
+
+.item-rock {
+
+    img {
+        max-width: 64%;
+        max-height: 64%;
+    }
+}
+
+.item-computer{
+
+    img {
+        max-width: 61%;
+        max-height: 61%;
+    }
+}
+
+.item-static {
+    &:hover {
+        cursor: default;
+
+        .item__icon {
+            transform: scale(1.2);
+        }
+    }
+}
